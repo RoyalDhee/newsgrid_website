@@ -87,6 +87,11 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0.9;
 }
 
+.card{
+    background: #fff;
+    padding: 1rem;
+}
+
 
 /* Navigation */
 #main-nav{
@@ -169,4 +174,25 @@ h1, h2, h3, h4, h5, h6{
 
 #showcase .showcase-content p{
     margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child, 
+#home-articles .articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child {
+    grid-column: 2 / span 2;
+
 }
