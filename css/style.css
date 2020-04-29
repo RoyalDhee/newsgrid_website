@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
 }
 
+.bg-secondary{
+    background: var(--secondary-color);
+    color: #fff;
+}
+
 .py-1{ padding: 1.5rem 0}
 .py-2{ padding: 2rem 0}
 .py-3{ padding: 3rem 0}
@@ -261,6 +266,17 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem ;
+}
+
+#article .meta .category{
+    margin-top: 0.4rem;
+}
 /* Footer */
 #main-footer{
     background: var(--dark-color);
